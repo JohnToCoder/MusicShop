@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MusicShop", ".", "{E92D9BD9-9FE1-449F-B0AB-FECCB53B9368}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/MusicShop"
+		Debug.AspNetCompiler.PhysicalPath = "D:\temp\ASPNET网上音乐商店的设计与实现\系统\网上音乐商店\MusicShop\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MusicShop\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MusicShop"
+		Release.AspNetCompiler.PhysicalPath = "D:\temp\ASPNET网上音乐商店的设计与实现\系统\网上音乐商店\MusicShop\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MusicShop\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3853"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E92D9BD9-9FE1-449F-B0AB-FECCB53B9368}.Debug|.NET.ActiveCfg = Debug|.NET
+		{E92D9BD9-9FE1-449F-B0AB-FECCB53B9368}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

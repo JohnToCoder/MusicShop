@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title> 基于Asp.net的网上音乐商店的设计与实现 </title>
+   
+     <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <TABLE height=100 cellSpacing=0 cellPadding=0 width=776 align=center 
+background=/top.png border=0>
+  
+  <TR>
+    <TD align=center  colspan="3"><IMG src="images/top.gif" border=0 style="width: 772px; height: 99px;">
+       </TD>
+    </TR></TABLE>
+<TABLE height=32 cellSpacing=0 cellPadding=0 width=776 align=center 
+background=images/menubg.gif border=0>
+  <TBODY>
+  <TR>
+    <TD width=25>&nbsp;</TD>
+    <TD>
+      <TABLE height=32 cellSpacing=0 cellPadding=0 
+      background=images/menubg.gif border=0>
+        <TBODY>
+        <TR>
+          <TD style="PADDING-TOP: 5px; width: 63px;" align=middle><A class=menunow 
+            href="default.aspx" >网站首页</A> </TD>
+          <TD align=middle style="width: 13px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px; width: 63px;" align=middle><A class=menu 
+            href="AllMusic.aspx" >所有音乐</A> 
+          </TD>
+              <TD align=middle style="width: 13px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px; width: 59px;" align=middle><A class=menu 
+            href="NewMusicList.aspx">最新音乐</A> 
+          </TD>
+          <TD align=middle style="width: 25px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px" align=middle><A class=menu 
+            href="HotMusicList.aspx" >热门音乐</A> </TD>
+          <TD align=middle style="width: 28px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px" align=middle><A class=menu 
+            href=Musitype.aspx >音乐分类</A> </TD>
+          <TD align=middle style="width: 25px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px; width: 75px;" align=middle>
+          <A class=menu 
+            href="MusicAlbumList.aspx" >音乐专辑</A> 
+          
+          
+          </TD>
+               <TD align=middle width=10><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px; width: 75px;" align=middle><A class=menu 
+            href="NewsList.aspx"  >网站公告</A> </TD>
+          <TD align=middle width=10><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px; width: 81px;" align=middle>
+          
+          <A class=menu 
+            href="SearchMusic.aspx" >音乐搜索</A> 
+          
+          </TD>
+          <TD align=middle style="width: 28px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+             <TD style="PADDING-TOP: 5px; width: 81px;" align=middle><A class=menu 
+            href="MusicRanking.aspx"  >歌曲排行</A> </TD>
+          <TD align=middle style="width: 28px"><IMG height=32 
+            src="images/menudivid.gif" width=3></TD>
+          <TD style="PADDING-TOP: 5px" align=middle>
+            
+            <A class=menu 
+            href="login.aspx"  >用户登录</A> 
+            </TD>
+          <TD align=middle width=10><IMG height=32 
+            src="images/menudivid.gif" width=3>
+            
+            <td>
+             <TD style="PADDING-TOP: 5px" align=middle>
+            <A class=menu 
+            href="BBS.aspx"  >音乐论坛</A> 
+            
+            </TD>
+            <TD align=middle width=10><IMG height=32 
+            src="images/menudivid.gif" width=3>
+            
+            <td>
+             <TD style="PADDING-TOP: 5px" align=middle>
+            <A class=menu 
+            href="UserHome.aspx"  >用户中心</A> 
+            
+            </TD>
+          <TD align=middle width=10><IMG height=32 
+            src="images/menudivid.gif" width=3>
+            </td>
+            </TD></TR></TBODY></TABLE></TD>
+    <TD align=right width=11>&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE height=14 cellSpacing=0 cellPadding=0 width=776 align=center 
+background=images/m2.gif border=0>
+  <TBODY>
+  <TR>
+    <TD width=136 style="height: 14px"><IMG height=14 src="images/m1.gif" width=10></TD>
+    <TD style="width: 629px; height: 14px"></TD>
+    <TD align=right style="width: 11px; height: 14px"><IMG height=14 src="images/m3.gif" 
+  width=11></TD></TR></TBODY></TABLE>
+        <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"
+            height="12" width="776">
+            <tr>
+                <td  bgcolor="#e6e6e6" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 108px">
+                    <table align="center" border="0" cellpadding="8" cellspacing="0" width="776">
+                        <tr align="middle" bgcolor="#e6e6e6">
+                            <td align="left" style="height: 1px">
+                            按歌曲首字母搜索：<a href="CodeSearchList.aspx?key=A">A</a>&nbsp; &nbsp;<a href="CodeSearchList.aspx?key=B">B</a>&nbsp;
+                                &nbsp;<a href="CodeSearchList.aspx?key=C">C</a>&nbsp; &nbsp;<a href="CodeSearchList.aspx?key=D">D</a>
+                                &nbsp; <a href="CodeSearchList.aspx?key=E">E</a>&nbsp; &nbsp;<a href="CodeSearchList.aspx?key=F">F</a>&nbsp;
+                                &nbsp;<a href="CodeSearchList.aspx?key=G">G</a>&nbsp; &nbsp;<a href="CodeSearchList.aspx?key=H">H</a>&nbsp;
+                                &nbsp;<a href="CodeSearchList.aspx?key=I">I</a> &nbsp; <a href="CodeSearchList.aspx?key=J">J</a>&nbsp;
+                                &nbsp;<a href="CodeSearchList.aspx?key=K">K</a> &nbsp; <a href="CodeSearchList.aspx?key=L">L</a>&nbsp;
+                                &nbsp;<a href="CodeSearchList.aspx?key=M">M</a> &nbsp; <a href="CodeSearchList.aspx?key=N">N</a>
+                                &nbsp; <a href="CodeSearchList.aspx?key=O">O</a> &nbsp; <a href="CodeSearchList.aspx?key=P">P</a>
+                                &nbsp; <a href="CodeSearchList.aspx?key=Q">Q</a> &nbsp; <a href="CodeSearchList.aspx?key=R">R</a>&nbsp;
+                                &nbsp;<a href="CodeSearchList.aspx?key=S">S</a> &nbsp; <a href="CodeSearchList.aspx?key=T">T</a>
+                                &nbsp; <a href="CodeSearchList.aspx?key=U">U</a> &nbsp; <a href="CodeSearchList.aspx?key=V">V</a>
+                                &nbsp; <a href="CodeSearchList.aspx?key=W">W</a>&nbsp; &nbsp;<a href="CodeSearchList.aspx?key=X">X</a>&nbsp;
+                                <a href="CodeSearchList.aspx?key=Y">Y</a>&nbsp; &nbsp;<a href="CodeSearchList.aspx?key=Z">Z</a>
+                            </td>
+                        </tr>
+                        <tr align="middle" bgcolor="#e6e6e6">
+                            <td align="center" style="height: 1px"> 基于Asp.net的网上音乐商店的设计与实现    <br />  <a href="Admin/Login.aspx"  target=_blank >后台管理</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+</html>
+
+
+
+  

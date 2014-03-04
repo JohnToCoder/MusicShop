@@ -1,0 +1,102 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class Admin_AlbumManger : System.Web.UI.Page
+{
+    SqlHelper data = new SqlHelper();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            InitData();
+        }
+
+    }
+
+    protected void InitData()
+    {
+        SqlHelper mydata = new SqlHelper();
+
+        GridView1.DataSource = mydata.GetDataReader("select * from Album");
+        GridView1.DataBind();
+    }
+    //GridView控件RowDeleting事件
+    protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+    {
+        SqlHelper mydata = new SqlHelper();
+
+        string ID = GridView1.DataKeys[e.RowIndex].Values[0].ToString();
+        try
+        {
+            mydata.RunSql("delete  from Album where  id='" + ID + "'");
+
+            Response.Write("<script language=javascript>alert('成功删除！')</script>");
+            GridView1.EditIndex = -1;
+            InitData();
+        }
+        catch
+        {
+
+            Response.Write("<script language=javascript>alert('删除失败！')</script>");
+        }
+
+    }
+    //GridView控件RowUpdating事件
+    protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
+    {
+        //SqlHelper mydata = new SqlHelper();
+        //string ID = GridView1.DataKeys[e.RowIndex].Values[0].ToString();
+        //try
+        //{
+        //    mydata.RunSql("update Album set name='" + ((TextBox)GridView1.Rows[e.RowIndex].FindControl("txtName")).Text + "',Person='" + ((TextBox)GridView1.Rows[e.RowIndex].FindControl("txtPerson")).Text + "',ds='" + ((TextBox)GridView1.Rows[e.RowIndex].FindControl("txtds")).Text + "'  where id=" + ID);
+
+
+
+        //    Response.Write("<script language=javascript>alert('修改成功!')</script>");
+        //    GridView1.EditIndex = -1;
+        //    InitData();
+        //}
+        //catch
+        //{
+        //    Response.Write("<script language=javascript>alert('修改失败!')</script>");
+        //}
+
+    }
+    //GridView控件RowCanceling事件
+    protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+    {
+        GridView1.EditIndex = -1;
+        InitData();
+    }
+    //GridView控件RowEditing事件
+    protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+    {
+        GridView1.EditIndex = e.NewEditIndex;
+        InitData();
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        data.RunSql("insert into Album(name,ds,Person,Pic)values('" + txtname.Text + "','" + TextBox2.Text + "','" + TextBox1.Text + "','"+pic.Text+"')");
+        Alert.AlertAndRedirect("添加成功", "AlbumManger.aspx");
+        InitData();
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        string res;
+        upload up = new upload();
+        res = up.Up(file1, "../uploads/");
+        this.Label1.Visible = true;
+        this.Label1.Text = up.Resup[Convert.ToInt32(res)];
+        this.pic.Text = up.s;
+        Image1.ImageUrl = "../" + pic.Text;
+    }
+}

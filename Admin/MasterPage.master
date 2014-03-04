@@ -1,0 +1,235 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title> 基于Asp.net的网上音乐商店的设计与实现 </title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="16%" background="images/banner_bg.gif"><a href=login.aspx><img src="images/control_login.gif" width="84" height="21" border="0" /></a></td>
+    <td width="68%" align="center" background="images/banner_bg.gif">&nbsp;</td>
+    <td width="16%" align="left" valign="bottom" background="images/banner_bg.gif"><table width="0" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       <td style="height: 21px"><a href=login.aspx><img src="images/control_exit.gif" width="84" height="21" border="0" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="100%" height="32" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="70%" align="left" background="images/info_bg.gif"><table width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="30">&nbsp;</td>
+          <td width="30" align="left"><img src="images/user.gif" width="24" height="32" /></td>
+          <td>您好，<strong> 超级管理员 </strong>! </td>
+        </tr>
+      </table></td>
+    <td width="30%" align="right" background="images/info_bg.gif"><DIV align=right ><div id="linkweb" style="font-size:12px; font-family:arial; padding-right:20px; padding-bottom:3px"></div>
+    <script>setInterval("linkweb.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script></DIV></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#797979" height="1px"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="190" align="left" valign="top"><table width="175" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td background="images/left_top_bg.gif"><img src="images/hide_top.gif" width="45" height="12" /></td>
+      </tr>
+      <tr>
+        <td align="center"><strong>管理菜单</strong></td>
+      </tr>
+      <tr>
+        <td height="10" background="images/p.gif"></td>
+      </tr>
+      
+    </table>
+      <table width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="10" align="right"></td>
+        </tr>
+        <tr>
+          <td width="175" align="right"><table width="165" border="0" cellspacing="0" cellpadding="6" style="border:solid 1px #ccc">
+            <tr>
+              <td align="left" background="images/pp.gif"><strong>网站公告管理</strong></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="15" align="left" style="height: 20px"><img src="images/ppp.gif" width="10" height="9" /></td>
+                  <td align="left" style="height: 20px"><a href="addnews.aspx">添加公告</a></td>
+                </tr>
+                <tr>
+                  <td width="15" align="left" style="height: 20px"><img src="images/ppp.gif" width="10" height="9" /></td>
+                  <td align="left" style="height: 20px"><a href="NewsList.aspx">管理公告</a></td>
+                </tr>
+              
+              </table>
+              
+                </td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+
+      <table width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="10" align="right"></td>
+        </tr>
+        <tr>
+          <td width="175" align="right"><table width="165" border="0" cellspacing="0" cellpadding="6" style="border:solid 1px #ccc">
+              <tr>
+                <td align="left" background="images/pp.gif"><strong>歌曲管理</strong></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="addMusic.aspx">添加歌曲</a></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="MusicList.aspx">管理歌曲</a></td>
+                    </tr>
+                  </table>
+                     
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                        <td height="20" align="left"><a href="Musictype.aspx">歌曲类别管理</a></td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                        <td height="20" align="left"><a href="AlbumManger.aspx">专辑管理</a></td>
+                      </tr>
+                    </table>
+                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                        <td height="20" align="left"><a href="SingerManger.aspx">歌手管理</a></td>
+                      </tr>
+                    </table>
+                  </td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+      
+      <table width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="right" style="height: 10px"></td>
+        </tr>
+        <tr>
+          <td width="175" align="right"><table width="165" border="0" cellspacing="0" cellpadding="6" style="border:solid 1px #ccc">
+              <tr>
+                <td align="left" background="images/pp.gif"><strong>评论管理</strong></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="CommentsManger.aspx">评论管理</a></td>
+                    </tr>
+            
+                  </table>
+                    </td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+      
+       
+      <table width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="10" align="right"></td>
+        </tr>
+        <tr>
+          <td width="175" align="right"><table width="165" border="0" cellspacing="0" cellpadding="6" style="border:solid 1px #ccc">
+              <tr>
+                <td align="left" background="images/pp.gif"><strong>论坛管理</strong></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="zhuti.aspx">帖子管理</a></td>
+                    </tr>
+                 <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="huifu.aspx">回帖管理</a></td>
+                    </tr>
+                  </table>
+                    </td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+        <table width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="10" align="right"></td>
+        </tr>
+        <tr>
+          <td width="175" align="right"><table width="165" border="0" cellspacing="0" cellpadding="6" style="border:solid 1px #ccc">
+              <tr>
+                <td align="left" background="images/pp.gif"><strong>系统设置</strong></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15" align="left" style="height: 20px"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td align="left" style="height: 20px"><a href="UserList.aspx">前台用户管理</a></td>
+                    </tr>
+                     <tr>
+                      <td width="15" align="left" style="height: 20px"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td align="left" style="height: 20px"><a href="MoneyList.aspx">会员充值管理</a></td>
+                    </tr>
+                   <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="AdminList.aspx">后台用户管理</a></td>
+                    </tr>
+                   <tr>
+                      <td width="15" align="left"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td height="20" align="left"><a href="AddAdmin.aspx">添加后台账号</a></td>
+                    </tr>
+                      <tr>
+                      <td width="15" align="left" style="height: 20px"><img src="images/ppp.gif" width="10" height="9" /></td>
+                      <td align="left" style="height: 20px"><a href="Mpwd.aspx">密码修改</a></td>
+                    </tr>
+                       
+                  </table>
+                    </td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+     
+    </td>
+    <td valign="top">
+        &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </td>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="3%" height="29" background="images/copyright_center.gif"><img src="images/copyright_left.gif" width="32" height="29" /></td>
+    <td width="94%" align="center" background="images/copyright_center.gif" class="text999">版权所有: 基于Asp.net的网上音乐商店的设计与实现 </td>
+    <td width="3%" background="images/copyright_center.gif"><img src="images/copyright_right.gif" width="31" height="29" /></td>
+  </tr>
+</table>
+    </div>
+    </form>
+</body>
+</html>
